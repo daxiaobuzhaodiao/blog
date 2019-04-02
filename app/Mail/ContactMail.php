@@ -29,8 +29,7 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        // return $this->view('view.name');
         return $this->subject('联系我们表单', $this->formData['name'])
-            ->view('emails.contactForm', ['data' => $this->formData]);
+            ->view('emails.contact_form', ['data' => $this->formData]);
     }
 }

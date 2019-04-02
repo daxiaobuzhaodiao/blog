@@ -4,6 +4,8 @@ Route::get('/', function () {
     return redirect('/posts');
 });
 
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
 Route::get('posts', 'PostsController@index')->name('posts.index');
 Route::get('posts/{slug}', 'PostsController@show')->name('posts.show');
 

@@ -15,13 +15,15 @@
     @yield('styles')
 </head>
 <body>
-    @include('posts.partials.page_nav')
+    @include('posts.layouts.page_nav')
 
     @yield('page_header')
 
     @yield('content')
 
-    @include('posts.partials.page_footer')
+    @yield('comments')
+
+    @include('posts.layouts.page_footer')
 
     {{-- Scripts --}}
     <script src="{{ asset('js/app.js') }}"></script>

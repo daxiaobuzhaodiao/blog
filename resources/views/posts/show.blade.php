@@ -9,7 +9,7 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="col-lg-10 col-md-12 mx-auto">
                     <div class="post-heading">
                         <h1>{{ $post->title }}</h1>
                         <h2 class="subheading">{{ $post->subtitle }}</h2>
@@ -31,7 +31,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-10 col-md-12 mx-auto">
                 {{-- 文章详情 --}}
                 <article>
                     {!! $post->content_html !!}
@@ -70,6 +70,18 @@
                         @endif
                     @endif
                 </div>
+            </div>
+        </div>
+    </div>
+@stop
+
+@section('comments')
+    {{-- <hr> --}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-12 mx-auto">
+                @include('posts.layouts.disqus')
             </div>
         </div>
     </div>

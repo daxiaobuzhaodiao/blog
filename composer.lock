@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e92c6dd3f0ce75c748a68e38f6a7a18",
+    "content-hash": "bfde51f9d0b8802bc458eb23def79336",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1937,6 +1937,56 @@
             "time": "2016-01-26T13:27:02+00:00"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -2325,6 +2375,114 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "rap2hpoutre/laravel-log-viewer",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rap2hpoutre/laravel-log-viewer.git",
+                "reference": "f6acf9779669568e8afce1182e1a5579d5a0ffe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/f6acf9779669568e8afce1182e1a5579d5a0ffe5",
+                "reference": "f6acf9779669568e8afce1182e1a5579d5a0ffe5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*|5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.7.*",
+                "phpunit/phpunit": "^7"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Rap2hpoutre\\LaravelLogViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rap2hpoutre",
+                    "email": "raphaelht@gmail.com"
+                }
+            ],
+            "description": "A Laravel log reader",
+            "keywords": [
+                "laravel",
+                "log",
+                "log-reader",
+                "log-viewer",
+                "logging",
+                "lumen"
+            ],
+            "time": "2019-03-02T15:10:46+00:00"
+        },
+        {
+            "name": "suin/php-rss-writer",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/suin/php-rss-writer.git",
+                "reference": "78f45e44a2a7cb0d82e4b9efb6f7b7a075b9051c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/suin/php-rss-writer/zipball/78f45e44a2a7cb0d82e4b9efb6f7b7a075b9051c",
+                "reference": "78f45e44a2a7cb0d82e4b9efb6f7b7a075b9051c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "eher/phpunit": ">=1.6",
+                "mockery/mockery": ">=0.7.2",
+                "suin/xoopsunit": ">=1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Suin\\RSSWriter": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "suin",
+                    "email": "suinyeze@gmail.com"
+                }
+            ],
+            "description": "Yet another simple RSS writer library for PHP 5.4 or later.",
+            "homepage": "https://github.com/suin/php-rss-writer",
+            "keywords": [
+                "feed",
+                "generator",
+                "php",
+                "rss",
+                "writer"
+            ],
+            "time": "2017-07-13T10:47:50+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
